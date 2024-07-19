@@ -1,18 +1,44 @@
 # How to create branchs..?
 
-* The default branch in Git is typically master. This is the branch that is created automatically when you initialize a new Git repository.
+What is the defalut branch in git..?
+    - The default branch in Git is typically `master`. This is the branch that is created automatically when you initialize a new Git repository.
 
-- Git always show the 
+1. git branch <branch name>: create new branch
+2. git branch : list of branchs
 
-what is the defalut branch in git..?
-- master branch
-- git branch -a
-- git branch -r
-- git branch -d <branch name>
-- git branch -D <branch name>
-- git branch -m <branch name>
-- git branch -M <branch name>
-- git branch -v
-- git branch -vv
-- git branch -vvv
-- git branch -vvvv
+3. git branch -a: Lists all local and remote branches.
+4. git branch -r: Lists all remote branches.
+
+5. git switch <branch name>: Switch the branch
+check the branch name ^ git branch
+
+6. git checkout <branch name>: Switch the branch
+check the branch name ^ git branch
+
+7. git branch -d <branch name>: Deletes a local branch, even if it's not fully merged. The branch must be fully merged in its upstream branch, or in HEAD.
+8. git branch -D <branch name>: Deletes a local branch, even if it's not fully merged.
+
+# How to merge a devlop branch to main useing pull requests..?
+
+* Step 1: Create a Pull Request
+      - Go to your repository on GitHub and click on the "New pull request" button.
+      - Select the branch you want to merge into the main branch.
+      - Click on the "Create pull request" button.
+
+- Step 2: Review the Pull Request
+- Step 3: Merge the Pull Request
+- Step 4: Delete the Branch
+- Step 5: Update the Main Branch
+- Step 6: Push the Changes to the Remote Repository
+- Step 7: Verify the Changes
+- Step 8: Close the Pull Request
+- Step 9: Delete the Pull Request
+- Step 10: Update the Main Branch
+- Step 11: Push the Changes to the Remote Repository
+
+9. git branch -m <branch name>: Renames a local branch.
+10. git branch -M <branch name>: Renames a local branch, even if it's not fully merged.
+
+11. git branch -v: Lists all local branches, with the commit hash and commit message for each branch.
+12. git branch -vv: Lists all local branches, with the commit hash and commit message for
+each branch, as well as the upstream branch for each branch.
