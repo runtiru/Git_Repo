@@ -1,4 +1,4 @@
-# how to setup password less authentication for private git repository to local machine..?
+# How to setup password less authentication for private git repository to local machine..?
 
 - Create a private git repositioty + add a readme file
   - clone this repository on your local use `HTTPS` (gitbash)
@@ -41,7 +41,8 @@ Now goto github account:
   - create new ssh key
   - give a title (ex: windows ssh)
     - paste the public key on the key section
-Add SSH Key
+
+- Add SSH Key
 
 * Now tesh the ssh key:
   - open github settings --> `ssh and gpg keys`
