@@ -1,1 +1,18 @@
-# How to create branchs
+# How to create branchs..?
+
+* The default branch in Git is typically master. This is the branch that is created automatically when you initialize a new Git repository.
+
+- Git always show the 
+
+what is the defalut branch in git..?
+- master branch
+- git branch -a
+- git branch -r
+- git branch -d <branch name>
+- git branch -D <branch name>
+- git branch -m <branch name>
+- git branch -M <branch name>
+- git branch -v
+- git branch -vv
+- git branch -vvv
+- git branch -vvvv
