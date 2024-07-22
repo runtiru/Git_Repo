@@ -1,2 +1,0 @@
-hello tiru
-good morning
