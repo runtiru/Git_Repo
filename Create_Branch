@@ -16,6 +16,7 @@ check the branch name ^ git branch
 check the branch name ^ git branch
 
 7. git branch -d <branch name>: Deletes a local branch, even if it's not fully merged. The branch must be fully merged in its upstream branch, or in HEAD.
+
 8. git branch -D <branch name>: Deletes a local branch, even if it's not fully merged.
 
 # How to merge a devlop branch to main useing pull requests..?
@@ -44,6 +45,8 @@ check the branch name ^ git branch
         - "Rebase and merge" will rebase the development branch onto the main branch and then merge it.
        - Click on the "Confirm merge" button to complete the merge.
 
+---
+
 Step 4: Delete the Branch..?
         - After merging the development branch into the main branch, you can delete the development branch.
         - To delete the development branch, go to the "Branches" tab of your repository and click
@@ -55,15 +58,22 @@ of your repository.
 * Step 5: Update the Main Branch:
 
 * Step 6: Push the Changes to the Remote Repository
-- Step 7: Verify the Changes
-- Step 8: Close the Pull Request
-- Step 9: Delete the Pull Request
-- Step 10: Update the Main Branch
-- Step 11: Push the Changes to the Remote Repository
 
-9. git branch -m <branch name>: Renames a local branch.
-10. git branch -M <branch name>: Renames a local branch, even if it's not fully merged.
+* Step 7: Verify the Changes
 
-11. git branch -v: Lists all local branches, with the commit hash and commit message for each branch.
-12. git branch -vv: Lists all local branches, with the commit hash and commit message for
+* Step 8: Close the Pull Request
+
+* Step 9: Delete the Pull Request
+
+* Step 10: Update the Main Branch
+
+* Step 11: Push the Changes to the Remote Repository
+
+1. git branch -m <branch name>: Renames a local branch.
+
+2. git branch -M <branch name>: Renames a local branch, even if it's not fully merged.
+
+3. git branch -v: Lists all local branches, with the commit hash and commit message for each branch.
+
+4. git branch -vv: Lists all local branches, with the commit hash and commit message for
 each branch, as well as the upstream branch for each branch.
