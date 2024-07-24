@@ -1,4 +1,7 @@
 # How to create branchs..?
+# How to merge a devlop branch to main useing pull requests..?
+# Git reset and git revert..?
+# How to create a new branch from a specific commit..?
 
 What is the defalut branch in git..?
     - The default branch in Git is typically `master`. This is the branch that is created automatically when you initialize a new Git repository.
@@ -49,17 +52,29 @@ check the branch name ^ git branch
 
 Step 4: Delete the Branch..?
         - After merging the development branch into the main branch, you can delete the development branch.
-        - To delete the development branch, go to the "Branches" tab of your repository and click
-on the "Delete branch" button next to the development branch.
+        - To delete the development branch, go to the "Branches" tab of your repository and click on the "Delete branch" button next to the development branch.
         - Confirm the deletion by clicking on the "Delete branch" button again.
-        - The development branch will be deleted and will no longer be visible in the "Branches" tab
-of your repository.
+        - The development branch will be deleted and will no longer be visible in the "Branches" tab of your repository.
 
 * Step 5: Update the Main Branch:
+      - After merging the development branch into the main branch, you may need to update the main branch with the latest changes from the development branch.
+      - To update the main branch, go to the "Branches" tab of your repository and click on the "Update branch" button next to the main branch.
+      - Select the development branch as the "source" branch and the main branch as the "destination" branch.
+      - Click on the "Update branch" button to complete the update.
+      - The main branch will be updated with the latest changes from the development branch.
 
-* Step 6: Push the Changes to the Remote Repository
+* Step 6: Push the Changes to the Remote Repository:
+      - After merging the development branch into the main branch and updating the main branch, you need to push the changes to the remote repository.
+      - To push the changes to the remote repository, go to the "Commits" tab of your repository and click on the "Push" button.
+      - Select the main branch as the "source" branch and the remote repository as the "destination" branch.
+      - Click on the "Push" button to complete the push.
+      - The changes will be pushed to the remote repository and will be visible to other users.
 
-* Step 7: Verify the Changes
+* Step 7: Verify the Changes:
+      - After pushing the changes to the remote repository, you can verify that the changes have been merged into the main branch and are visible to other users.
+      - To verify the changes, go to the "Commits" tab of your repository and check the commits made to the main branch.
+      - You can also check the changes made to the main branch by going to the "Files changed" tab of your repository.
+      - If you have any questions or issues with the changes, you can contact the repository owner or the development team for assistance.
 
 * Step 8: Close the Pull Request
 
@@ -77,3 +92,38 @@ of your repository.
 
 4. git branch -vv: Lists all local branches, with the commit hash and commit message for
 each branch, as well as the upstream branch for each branch.
+
+# Git reset and git revert..?
+
+git reset --soft <commit id>
+      --> this will not change the file content but it will change the commit id.
+      --> this commit id will not change inside the file content & what commit id will give that is the latest.
+
+git reset --hard <commit id>
+      --> this will change inside the file content, latest commit will delete.
+      --> this will delete the latest commit.
+      --> this will delete the latest commit & file content.
+
+git reset --mixed <commit id>
+      --> this will change the commit id & file content.
+
+git revert <commit id>
+      --> this will create a new commit id & file content.
+
+git revert --no-commit <commit id>
+      --> this will create a new commit id & file content & it will not create a new commit
+
+git revert --no-edit <commit id>
+      --> this will create a new commit id & file content & it will not create a new commit &
+it will not create a new commit id.
+
+git revert --no-commit --no-edit <commit id>
+      --> this will create a new commit id & file content & it will not create a new commit
+& it will not create a new commit id.
+
+git revert --no-commit --no-edit --no-verify <commit id>
+      --> this will create a new commit id & file content & it will not create a new commit
+& it will not create a new commit id & it will not create a new commit id.
+
+git revert --no-commit --no-edit --no-verify --no-pager <commit id>
+git revert --no-commit --no-edit --no-verify --no-pager --no-stat <commit id>
