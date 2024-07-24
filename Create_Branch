@@ -109,6 +109,7 @@ git reset --mixed <commit id>
 
 git revert <commit id>
       --> this will create a new commit id & file content.
+      --> this will create a new commit id & file content & it will not delete the latest commit
 
 git revert --no-commit <commit id>
       --> this will create a new commit id & file content & it will not create a new commit

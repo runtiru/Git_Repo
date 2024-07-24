@@ -99,3 +99,6 @@ Password - ******
 - git remote -v
 - git remote add origin https://github.com/tirumalagadiya/firstrepo.git
 - git remote set-url origin https://github.com/tirumalagadiya/firstrepo
+
+
+# how to change git private repository to public repository..?
